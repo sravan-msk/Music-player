@@ -40,12 +40,6 @@ let songs = [
     filePath: "assets/5.mp3",
     fileImg: "assets/5.jpg",
   },
-  {
-    fileName: "Crazy Feeling -My3Songs.in",
-    fileArtist: "Prudhvi Chandra",
-    filePath: "assets/6.mp3",
-    fileImg: "assets/6.jpg",
-  },
 ];
 
 //play and pause
