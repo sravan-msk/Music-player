@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music-Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <h2>Music Love</h2>
+        </div>
+      </div>
+    </nav>
+    <!-- main-section -->
+    <main>
+      <div class="container flex">
+        <div class="song-detail-section">
+          <div class="img-container">
+            <img src="assets/1.jpg" alt="" id="img" />
+          </div>
+          <div class="song-info flex">
+            <p id="songName">seethakalam suryudalaga...</p>
+            <p id="artistName">Devi Sri Prasad</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer-section -->
+    <footer>
+      <div class="container footer-section flex">
+        <div class="progressBar">
+          <input type="range" id="range" min="0" max="100" value="0" />
+          <div class="time-controls">
+            <span id="currenttime"></span>
+            <span id="durationtime"></span>
+          </div>
+        </div>
+        <div class="song-controls">
+          <audio src="assets/1.mp3" id="audio"></audio>
+          <i class="fa-solid fa-backward-step" id="previous"></i>
+          <i class="fa-solid fa-play"></i>
+          <i class="fa-solid fa-forward-step" id="next"></i>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
